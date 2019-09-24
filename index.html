@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<center>
+    <h1>Тест</h1>
+</center>
+<h1>1.На каком континенте расположено большее количество стран?</h1>
+    <form>
+    <p><input name="variant" type="radio"id="1">Северная Америка</p>
+    <p><input name="variant" type="radio"id="2">Южная Америка</p>
+    <p><input name="variant" type="radio"id="3">Африка</p>
+    <p><input name="variant" type="radio"id="4">Австралия</p>
+    </form>
+</br>
+<h1>2.Бухарест-столица...</h1>
+    <form>
+    <p><input name="variant" type="radio"id="5">Молдавия</p>
+    <p><input name="variant" type="radio"id="6">Румынии</p>
+    <p><input name="variant" type="radio"id="7">Сербия</p>
+    <p><input name="variant" type="radio"id="8">Венгрия</p>
+    </form>
+</br>
+<h1>3.Сколько планет в Солнечной системе?</h1>
+    <form>
+    <p><input name="variant" type="radio"id="9">7</p>
+    <p><input name="variant" type="radio"id="10">8</p>
+    <p><input name="variant" type="radio"id="11">9</p>
+    <p><input name="variant" type="radio"id="12">4</p>
+    </form>
+</br>
+<button onclick="p1()">Готово</button>
+<h1 id="13">0/0</h1>
+
+<script>
+    correct=0
+    incorrect=0
+    function p1() {
+
+        if (document.getElementById('3').checked) {
+            correct++
+        } else {
+            incorrect++
+        }
+
+        if (document.getElementById('6').checked) {
+            correct++
+        } else {
+            incorrect++
+        }
+
+        if (document.getElementById('9').checked) {
+            correct++
+        } else {
+            incorrect++
+        }
+        document.getElementById('13').innerHTML=incorrect + "/" + correct
+    }
+</script>
+
+</body>
+</html>
